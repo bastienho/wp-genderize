@@ -86,6 +86,7 @@ class WPGenderedUsers {
             'tag'=>_x('neutral', 'gender of a tag', 'wp-genderize'),
             'comment'=>_x('neutral', 'gender of a comment', 'wp-genderize'),
             'widget'=>_x('neutral', 'gender of a widget', 'wp-genderize'),
+            'users'=>_x('neutral', 'gender of an user', 'wp-genderize'),
         ));
 
 
