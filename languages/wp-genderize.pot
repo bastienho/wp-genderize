@@ -1,0 +1,206 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Gendered Users\n"
+"POT-Creation-Date: 2016-04-27 20:15+0200\n"
+"PO-Revision-Date: 2015-10-21 18:53+0100\n"
+"Last-Translator: Bastien Ho <b@stienho.fr>\n"
+"Language-Team: Bastien Ho <b@stienho.fr>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../gender.php:86 ../gender.php:87
+msgid "Gender"
+msgstr ""
+
+#: ../gender.php:90
+msgid "Male"
+msgstr ""
+
+#: ../gender.php:91
+msgid "Female"
+msgstr ""
+
+#: ../localize.php:3
+msgid "Administrator"
+msgstr ""
+
+#: ../localize.php:4
+msgctxt "male"
+msgid "Administrator"
+msgstr ""
+
+#: ../localize.php:5
+msgctxt "female"
+msgid "Administrator"
+msgstr ""
+
+#: ../localize.php:6
+msgctxt "neutral"
+msgid "Administrator"
+msgstr ""
+
+#: ../localize.php:8
+msgid "Editor"
+msgstr ""
+
+#: ../localize.php:9
+msgctxt "male"
+msgid "Editor"
+msgstr ""
+
+#: ../localize.php:10
+msgctxt "female"
+msgid "Editor"
+msgstr ""
+
+#: ../localize.php:11
+msgctxt "neutral"
+msgid "Editor"
+msgstr ""
+
+#: ../localize.php:13
+msgid "Author"
+msgstr ""
+
+#: ../localize.php:14
+msgctxt "male"
+msgid "Author"
+msgstr ""
+
+#: ../localize.php:15
+msgctxt "female"
+msgid "Author"
+msgstr ""
+
+#: ../localize.php:16
+msgctxt "neutral"
+msgid "Author"
+msgstr ""
+
+#: ../localize.php:18
+msgid "Contributor"
+msgstr ""
+
+#: ../localize.php:19
+msgctxt "male"
+msgid "Contributor"
+msgstr ""
+
+#: ../localize.php:20
+msgctxt "female"
+msgid "Contributor"
+msgstr ""
+
+#: ../localize.php:21
+msgctxt "neutral"
+msgid "Contributor"
+msgstr ""
+
+#: ../localize.php:23
+msgid "Subscriber"
+msgstr ""
+
+#: ../localize.php:24
+msgctxt "male"
+msgid "Subscriber"
+msgstr ""
+
+#: ../localize.php:25
+msgctxt "female"
+msgid "Subscriber"
+msgstr ""
+
+#: ../localize.php:26
+msgctxt "neutral"
+msgid "Subscriber"
+msgstr ""
+
+#: ../localize.php:28
+msgid "User"
+msgstr ""
+
+#: ../localize.php:29
+msgctxt "male"
+msgid "User"
+msgstr ""
+
+#: ../localize.php:30
+msgctxt "female"
+msgid "User"
+msgstr ""
+
+#: ../localize.php:31
+msgctxt "neutral"
+msgid "User"
+msgstr ""
+
+#: ../localize.php:33
+msgid "Users"
+msgstr ""
+
+#: ../localize.php:34
+msgctxt "male"
+msgid "Users"
+msgstr ""
+
+#: ../localize.php:35
+msgctxt "female"
+msgid "Users"
+msgstr ""
+
+#: ../localize.php:36
+msgctxt "neutral"
+msgid "Users"
+msgstr ""
+
+#: ../localize.php:38
+msgid "All users"
+msgstr ""
+
+#: ../localize.php:39
+msgctxt "male"
+msgid "All users"
+msgstr ""
+
+#: ../localize.php:40
+msgctxt "female"
+msgid "All users"
+msgstr ""
+
+#: ../localize.php:41
+msgctxt "neutral"
+msgid "All users"
+msgstr ""
+
+#: ../localize.php:43
+#, php-format
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr ""
+
+#: ../localize.php:44
+#, php-format
+msgctxt "male"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr ""
+
+#: ../localize.php:45
+#, php-format
+msgctxt "female"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr ""
+
+#: ../localize.php:46
+#, php-format
+msgctxt "neutral"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr ""

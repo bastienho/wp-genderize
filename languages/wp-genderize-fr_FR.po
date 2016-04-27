@@ -1,0 +1,520 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Gendered Users\n"
+"POT-Creation-Date: 2016-04-27 22:22+0200\n"
+"PO-Revision-Date: 2016-04-27 22:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: Bastien Ho <b@stienho.fr>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../gender.php:82
+msgctxt "gender of a post"
+msgid "neutral"
+msgstr "male"
+
+#: ../gender.php:83
+msgctxt "gender of a page"
+msgid "neutral"
+msgstr "female"
+
+#: ../gender.php:84
+msgctxt "gender of a category"
+msgid "neutral"
+msgstr "female"
+
+#: ../gender.php:85
+msgctxt "gender of a tag"
+msgid "neutral"
+msgstr "female"
+
+#: ../gender.php:86
+msgctxt "gender of a comment"
+msgid "neutral"
+msgstr "male"
+
+#: ../gender.php:87
+msgctxt "gender of a widget"
+msgid "neutral"
+msgstr "male"
+
+#: ../gender.php:125 ../gender.php:126
+msgid "Gender"
+msgstr "Genre"
+
+#: ../gender.php:129
+msgid "Male"
+msgstr "Masculin"
+
+#: ../gender.php:130
+msgid "Female"
+msgstr "Féminin"
+
+#: ../localize.php:3
+msgid "Administrator"
+msgstr "Administrat-eur/rice"
+
+#: ../localize.php:4
+msgctxt "male"
+msgid "Administrator"
+msgstr "Administrateur"
+
+#: ../localize.php:5
+msgctxt "female"
+msgid "Administrator"
+msgstr "Administratrice"
+
+#: ../localize.php:6
+msgctxt "neutral"
+msgid "Administrator"
+msgstr "Admin"
+
+#: ../localize.php:8
+msgid "Editor"
+msgstr "Édit-eur/rice"
+
+#: ../localize.php:9
+msgctxt "male"
+msgid "Editor"
+msgstr "Éditeur"
+
+#: ../localize.php:10
+msgctxt "female"
+msgid "Editor"
+msgstr "Éditrice"
+
+#: ../localize.php:11
+msgctxt "neutral"
+msgid "Editor"
+msgstr "Éditeur"
+
+#: ../localize.php:13
+msgid "Author"
+msgstr "Auteur-e"
+
+#: ../localize.php:14
+msgctxt "male"
+msgid "Author"
+msgstr "Auteur"
+
+#: ../localize.php:15
+msgctxt "female"
+msgid "Author"
+msgstr "Auteure"
+
+#: ../localize.php:16
+msgctxt "neutral"
+msgid "Author"
+msgstr "Auteur"
+
+#: ../localize.php:18
+msgid "Contributor"
+msgstr "Contribut-eur/rice"
+
+#: ../localize.php:19
+msgctxt "male"
+msgid "Contributor"
+msgstr "Contributeur"
+
+#: ../localize.php:20
+msgctxt "female"
+msgid "Contributor"
+msgstr "Contributrice"
+
+#: ../localize.php:21
+msgctxt "neutral"
+msgid "Contributor"
+msgstr "Contributeur"
+
+#: ../localize.php:23
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: ../localize.php:24
+msgctxt "male"
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: ../localize.php:25
+msgctxt "female"
+msgid "Subscriber"
+msgstr "Abonnée"
+
+#: ../localize.php:26
+msgctxt "neutral"
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: ../localize.php:28 ../localize.php:29
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Profil"
+msgstr[1] "Profils"
+
+#: ../localize.php:30
+msgid "Users"
+msgstr "Profils"
+
+#: ../localize.php:31
+msgid "All Users"
+msgstr "Tous les profils"
+
+#: ../localize.php:33
+#, php-format
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr "Bienvenue dans WordPress&nbsp;%s"
+
+#: ../localize.php:34
+#, php-format
+msgctxt "male"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr "Soit le bienvenu dans WordPress&nbsp;%s"
+
+#: ../localize.php:35
+#, php-format
+msgctxt "female"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr "Soit la bienvenue dans WordPress&nbsp;%s"
+
+#: ../localize.php:36
+#, php-format
+msgctxt "neutral"
+msgid "Welcome to WordPress&nbsp;%s"
+msgstr "Bienvenu dans WordPress&nbsp;%s"
+
+#: ../localize.php:41
+#, php-format
+msgctxt "male"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Tout <span class=\"count\">(%s)</span>"
+msgstr[1] "Tous <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:42
+#, php-format
+msgctxt "female"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Toutes <span class=\"count\">(%s)</span>"
+msgstr[1] "Toutes <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:43
+#, php-format
+msgctxt "neutral"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Tout <span class=\"count\">(%s)</span>"
+msgstr[1] "Tous <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:44
+msgid "All"
+msgstr "Tous"
+
+#: ../localize.php:45
+msgctxt "male"
+msgid "All"
+msgstr "Tous"
+
+#: ../localize.php:46
+msgctxt "female"
+msgid "All"
+msgstr "Toutes"
+
+#: ../localize.php:47
+msgctxt "neutral"
+msgid "All"
+msgstr "Tout"
+
+#: ../localize.php:49
+#, php-format
+msgctxt "male"
+msgid "Mine <span class=\"count\">(%s)</span>"
+msgid_plural "Mine <span class=\"count\">(%s)</span>"
+msgstr[0] "Le mien <span class=\"count\">(%s)</span>"
+msgstr[1] "Les miens <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:50
+#, php-format
+msgctxt "female"
+msgid "Mine <span class=\"count\">(%s)</span>"
+msgid_plural "Mine <span class=\"count\">(%s)</span>"
+msgstr[0] "La mienne <span class=\"count\">(%s)</span>"
+msgstr[1] "Les miennes <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:51
+#, php-format
+msgctxt "neutral"
+msgid "Mine <span class=\"count\">(%s)</span>"
+msgid_plural "Mine <span class=\"count\">(%s)</span>"
+msgstr[0] "Le mien <span class=\"count\">(%s)</span>"
+msgstr[1] "Les miens <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:52
+msgid "Mine"
+msgstr "Le mien"
+
+#: ../localize.php:53
+msgctxt "male"
+msgid "Mine"
+msgstr "Le mien"
+
+#: ../localize.php:54
+msgctxt "female"
+msgid "Mine"
+msgstr "La mienne"
+
+#: ../localize.php:55
+msgctxt "neutral"
+msgid "Mine"
+msgstr "Le mien"
+
+#: ../localize.php:57
+#, php-format
+msgctxt "male"
+msgid "Sticky <span class=\"count\">(%s)</span>"
+msgid_plural "Sticky <span class=\"count\">(%s)</span>"
+msgstr[0] "Épinglé <span class=\"count\">(%s)</span>"
+msgstr[1] "Épinglés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:58
+#, php-format
+msgctxt "female"
+msgid "Sticky <span class=\"count\">(%s)</span>"
+msgid_plural "Sticky <span class=\"count\">(%s)</span>"
+msgstr[0] "Épinglée <span class=\"count\">(%s)</span>"
+msgstr[1] "Épinglées <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:59
+#, php-format
+msgctxt "neutral"
+msgid "Sticky <span class=\"count\">(%s)</span>"
+msgid_plural "Sticky <span class=\"count\">(%s)</span>"
+msgstr[0] "Épinglé <span class=\"count\">(%s)</span>"
+msgstr[1] "Épinglés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:60
+msgid "Sticky"
+msgstr "Épinglé"
+
+#: ../localize.php:61
+msgctxt "male"
+msgid "Sticky"
+msgstr "Épinglé"
+
+#: ../localize.php:62
+msgctxt "female"
+msgid "Sticky"
+msgstr "Épinglée"
+
+#: ../localize.php:63
+msgctxt "neutral"
+msgid "Sticky"
+msgstr "Épinglé"
+
+#: ../localize.php:65
+#, php-format
+msgctxt "male"
+msgid "Published <span class=\"count\">(%s)</span>"
+msgid_plural "Published <span class=\"count\">(%s)</span>"
+msgstr[0] "Publié <span class=\"count\">(%s)</span>"
+msgstr[1] "Publiés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:66
+#, php-format
+msgctxt "female"
+msgid "Published <span class=\"count\">(%s)</span>"
+msgid_plural "Published <span class=\"count\">(%s)</span>"
+msgstr[0] "Publiée <span class=\"count\">(%s)</span>"
+msgstr[1] "Publiées <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:67
+#, php-format
+msgctxt "neutral"
+msgid "Published <span class=\"count\">(%s)</span>"
+msgid_plural "Published <span class=\"count\">(%s)</span>"
+msgstr[0] "Publié <span class=\"count\">(%s)</span>"
+msgstr[1] "Publiés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:68
+msgid "Published"
+msgstr "Publié"
+
+#: ../localize.php:69
+msgctxt "male"
+msgid "Published"
+msgstr "Publié"
+
+#: ../localize.php:70
+msgctxt "female"
+msgid "Published"
+msgstr "Publiée"
+
+#: ../localize.php:71
+msgctxt "neutral"
+msgid "Published"
+msgstr "Publié"
+
+#: ../localize.php:73
+#, php-format
+msgctxt "male"
+msgid "Draft <span class=\"count\">(%s)</span>"
+msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+msgstr[0] "Brouillon <span class=\"count\">(%s)</span>"
+msgstr[1] "Brouillons <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:74
+#, php-format
+msgctxt "female"
+msgid "Draft <span class=\"count\">(%s)</span>"
+msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+msgstr[0] "Brouillon <span class=\"count\">(%s)</span>"
+msgstr[1] "Brouillons <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:75
+#, php-format
+msgctxt "neutral"
+msgid "Draft <span class=\"count\">(%s)</span>"
+msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+msgstr[0] "Brouillon <span class=\"count\">(%s)</span>"
+msgstr[1] "Brouillons <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:76
+msgid "Draft"
+msgstr "Brouillon"
+
+#: ../localize.php:77
+msgctxt "male"
+msgid "Draft"
+msgstr "Brouillon"
+
+#: ../localize.php:78
+msgctxt "female"
+msgid "Draft"
+msgstr "Brouillon"
+
+#: ../localize.php:79
+msgctxt "neutral"
+msgid "Draft"
+msgstr "Brouillon"
+
+#: ../localize.php:81
+#, php-format
+msgctxt "male"
+msgid "Private <span class=\"count\">(%s)</span>"
+msgid_plural "Private <span class=\"count\">(%s)</span>"
+msgstr[0] "Privé <span class=\"count\">(%s)</span>"
+msgstr[1] "Privés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:82
+#, php-format
+msgctxt "female"
+msgid "Private <span class=\"count\">(%s)</span>"
+msgid_plural "Private <span class=\"count\">(%s)</span>"
+msgstr[0] "Privée <span class=\"count\">(%s)</span>"
+msgstr[1] "Privées <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:83
+#, php-format
+msgctxt "neutral"
+msgid "Private <span class=\"count\">(%s)</span>"
+msgid_plural "Private <span class=\"count\">(%s)</span>"
+msgstr[0] "Privé <span class=\"count\">(%s)</span>"
+msgstr[1] "Privés <span class=\"count\">(%s)</span>"
+
+#: ../localize.php:84
+msgid "Private"
+msgstr "Privé"
+
+#: ../localize.php:85
+msgctxt "male"
+msgid "Private"
+msgstr "Privé"
+
+#: ../localize.php:86
+msgctxt "female"
+msgid "Private"
+msgstr "Privée"
+
+#: ../localize.php:87
+msgctxt "neutral"
+msgid "Private"
+msgstr "Privé"
+
+#~ msgid "Drafts"
+#~ msgstr "Brouillons"
+
+#~ msgctxt "male"
+#~ msgid "Drafts"
+#~ msgstr "Brouillons"
+
+#~ msgctxt "female"
+#~ msgid "Drafts"
+#~ msgstr "Brouillons"
+
+#~ msgctxt "neutral"
+#~ msgid "Drafts"
+#~ msgstr "Brouillons"
+
+#~ msgid "Publish"
+#~ msgstr "Publié"
+
+#~ msgctxt "male"
+#~ msgid "Publish"
+#~ msgstr "Publié"
+
+#~ msgctxt "female"
+#~ msgid "Publish"
+#~ msgstr "Publiée"
+
+#~ msgctxt "neutral"
+#~ msgid "Publish"
+#~ msgstr "Publié"
+
+#~ msgid "All users"
+#~ msgstr "Tous les comptes utilisateurs"
+
+#~ msgctxt "male"
+#~ msgid "User"
+#~ msgstr "Utilisateur"
+
+#~ msgctxt "female"
+#~ msgid "User"
+#~ msgstr "Utilisatrice"
+
+#~ msgctxt "neutral"
+#~ msgid "User"
+#~ msgstr "Compte utilisateur"
+
+#~ msgctxt "male"
+#~ msgid "Users"
+#~ msgstr "Utilisateurs"
+
+#~ msgctxt "female"
+#~ msgid "Users"
+#~ msgstr "Utilisatrices"
+
+#~ msgctxt "neutral"
+#~ msgid "Users"
+#~ msgstr "Comptes utilisateurs"
+
+#~ msgctxt "male"
+#~ msgid "All users"
+#~ msgstr "Tous les comptes utilisateurs"
+
+#~ msgctxt "female"
+#~ msgid "All users"
+#~ msgstr "Tous les comptes utilisateurs"
+
+#~ msgctxt "neutral"
+#~ msgid "All users"
+#~ msgstr "Tous les comptes utilisateurs"
