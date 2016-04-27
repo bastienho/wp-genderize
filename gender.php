@@ -45,9 +45,9 @@ class WPGenderedUsers {
     function __construct() {
         load_plugin_textdomain( 'wp-genderize', false, 'wp-genderize/languages' );
 
-        $this->meta = apply_filters('user_gender_meta', 'wgu_gender');
+        $this->meta = apply_filters('genderize_meta', 'wgu_gender');
 
-        $this->strings_to_gender = array(
+        $this->strings_to_gender = apply_filters('genderize_strings_to_gender', array(
             'Administrator',
             'Editor',
             'Author',
@@ -59,33 +59,34 @@ class WPGenderedUsers {
             'Published',
             'Draft',
             'Private'
-        );
-        $this->plural_to_gender = array(
+        ));
+
+        $this->plural_to_gender = apply_filters('genderize_plural_to_gender', array(
             // Posts and pages
             'Mine <span class="count">(%s)</span>',
             'All <span class="count">(%s)</span>',
             'Published <span class="count">(%s)</span>',
             'Draft <span class="count">(%s)</span>',
             'Private <span class="count">(%s)</span>'
-        );
+        ));
 
-        $this->string_to_replace = array(
+        $this->string_to_replace = apply_filters('genderize_strings_to_replace', array(
             'User',
             'Users',
             'All Users',
-        );
-        $this->plural_to_replace = array(
+        ));
+        $this->plural_to_replace = apply_filters('genderize_plural_to_replace', array(
             'User',
-        );
+        ));
 
-        $this->objects = array(
+        $this->objects = apply_filters('genderize_objects', array(
             'post'=>_x('neutral', 'gender of a post', 'wp-genderize'),
             'page'=>_x('neutral', 'gender of a page', 'wp-genderize'),
-            'category'=>_x('neutral', 'gender of a category', 'wp-genderize'),
+            'category'=>_x('neutral', 'gendergenderize_meta of a category', 'wp-genderize'),
             'tag'=>_x('neutral', 'gender of a tag', 'wp-genderize'),
             'comment'=>_x('neutral', 'gender of a comment', 'wp-genderize'),
             'widget'=>_x('neutral', 'gender of a widget', 'wp-genderize'),
-        );
+        ));
 
 
         add_action('personal_options', array(&$this, 'personal_options'), 100);
@@ -114,7 +115,7 @@ class WPGenderedUsers {
         if($value=='f'){
             $gender = 'female';
         }
-        return apply_filters('user_gender', $gender);
+        return apply_filters('genderize', $gender);
     }
 
 
