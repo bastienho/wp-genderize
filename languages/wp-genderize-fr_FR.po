@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Gendered Users\n"
-"POT-Creation-Date: 2016-04-27 22:22+0200\n"
-"PO-Revision-Date: 2016-04-27 22:52+0200\n"
+"POT-Creation-Date: 2016-04-27 23:15+0200\n"
+"PO-Revision-Date: 2016-04-27 23:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: Bastien Ho <b@stienho.fr>\n"
 "Language: fr\n"
@@ -18,45 +18,45 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../gender.php:82
+#: ../gender.php:83
 msgctxt "gender of a post"
 msgid "neutral"
 msgstr "male"
 
-#: ../gender.php:83
+#: ../gender.php:84
 msgctxt "gender of a page"
 msgid "neutral"
 msgstr "female"
 
-#: ../gender.php:84
-msgctxt "gender of a category"
-msgid "neutral"
-msgstr "female"
-
 #: ../gender.php:85
+msgctxt "gendergenderize_meta of a category"
+msgid "neutral"
+msgstr ""
+
+#: ../gender.php:86
 msgctxt "gender of a tag"
 msgid "neutral"
 msgstr "female"
 
-#: ../gender.php:86
+#: ../gender.php:87
 msgctxt "gender of a comment"
 msgid "neutral"
 msgstr "male"
 
-#: ../gender.php:87
+#: ../gender.php:88
 msgctxt "gender of a widget"
 msgid "neutral"
 msgstr "male"
 
-#: ../gender.php:125 ../gender.php:126
+#: ../gender.php:137 ../gender.php:138
 msgid "Gender"
 msgstr "Genre"
 
-#: ../gender.php:129
+#: ../gender.php:141
 msgid "Male"
 msgstr "Masculin"
 
-#: ../gender.php:130
+#: ../gender.php:142
 msgid "Female"
 msgstr "Féminin"
 
@@ -138,7 +138,7 @@ msgstr "Contributeur"
 
 #: ../localize.php:23
 msgid "Subscriber"
-msgstr "Abonné"
+msgstr "Abonné-e"
 
 #: ../localize.php:24
 msgctxt "male"
@@ -449,6 +449,10 @@ msgstr "Privée"
 msgctxt "neutral"
 msgid "Private"
 msgstr "Privé"
+
+#~ msgctxt "gender of a category"
+#~ msgid "neutral"
+#~ msgstr "female"
 
 #~ msgid "Drafts"
 #~ msgstr "Brouillons"
