@@ -106,6 +106,13 @@ class WPGenderedUsers {
         $this->__construct();
     }
 
+    /**
+     * Try to fetch a gender against a string
+     *
+     * @param string $_value
+     * @filter genderize($gender)
+     * @return string
+     */
     function determine_gender($_value){
         $value = substr(trim(strtolower($_value)), 0, 1);
         $gender = '';
@@ -118,7 +125,11 @@ class WPGenderedUsers {
         return apply_filters('genderize', $gender);
     }
 
-
+    /**
+     * Add a field in user's page
+     *
+     * @param \WP_user $profileuser
+     */
     function personal_options($profileuser) {
         $gender = get_user_meta($profileuser->ID, $this->meta, true);
         ?>
@@ -136,6 +147,12 @@ class WPGenderedUsers {
         <?php
     }
 
+    /**
+     * Save user's gender
+     *
+     * @param int $user_id
+     * @return void
+     */
     function options_update($user_id) {
 
         if (!current_user_can('edit_user', $user_id))
@@ -144,7 +161,10 @@ class WPGenderedUsers {
         update_user_meta($user_id, $this->meta, esc_attr(filter_input(INPUT_POST, $this->meta, FILTER_SANITIZE_STRING)));
     }
 
-
+    /**
+     *
+     * @return string
+     */
     function get_current_object(){
         $this->current_screen = function_exists('get_current_screen') ? get_current_screen() : null;
         if(!$this->current_screen){
@@ -158,6 +178,16 @@ class WPGenderedUsers {
         return;
     }
 
+    /**
+     *
+     * @param string $translated_text
+     * @param string $single
+     * @param string $plural
+     * @param string $number
+     * @param string $context
+     * @param string $domain
+     * @return string
+     */
     function ngettext_with_context($translated_text, $single, $plural, $number, $context, $domain){
         if($domain=='wp-genderize'){
             return $translated_text;
@@ -174,6 +204,15 @@ class WPGenderedUsers {
         return (in_array($single, $this->plural_to_gender)) ? _gn($single, $plural, $number, $gender, 'wp-genderize') : $translated_text;
     }
 
+    /**
+     *
+     * @param string $translated_text
+     * @param string $single
+     * @param string $plural
+     * @param string $number
+     * @param string $domain
+     * @return string
+     */
     function ngettext($translated_text, $single, $plural, $number, $domain){
         if($domain=='wp-genderize'){
             return $translated_text;
@@ -190,6 +229,14 @@ class WPGenderedUsers {
         return (in_array($single, $this->plural_to_gender)) ? _gn($single, $plural, $number, $gender, 'wp-genderize') : $translated_text;
     }
 
+    /**
+     *
+     * @param string $translated_text
+     * @param string $text
+     * @param string $context
+     * @param string $domain
+     * @return string
+     */
     function gettext_with_context($translated_text, $text, $context, $domain){
         if($domain=='wp-genderize'){
             return $translated_text;
@@ -206,6 +253,13 @@ class WPGenderedUsers {
         return (in_array($text, $this->strings_to_gender)) ? _g($text, $gender, 'wp-genderize') : $translated_text;
     }
 
+    /**
+     *
+     * @param string $translated_text
+     * @param string $text
+     * @param string $domain
+     * @return string
+     */
     function gettext($translated_text, $text, $domain){
         if($domain=='wp-genderize'){
             return $translated_text;
@@ -222,6 +276,13 @@ class WPGenderedUsers {
         return (in_array($text, $this->strings_to_gender)) ? _g($text, $gender, 'wp-genderize') : $translated_text;
     }
 
+    /**
+     *
+     * @global array $wp_roles
+     * @param array $role_list
+     * @param \WP_User $user_object
+     * @return array
+     */
     function get_role_list($role_list, $user_object){
         global $wp_roles;
         $user_gender = $this->determine_gender(get_user_meta($user_object->ID, $this->meta, true));
@@ -231,6 +292,10 @@ class WPGenderedUsers {
         return $role_list;
     }
 
+    /**
+     *
+     * @global array $wp_roles
+     */
     function alter_role_names(){
         global $wp_roles;
         foreach($wp_roles->role_names as $role=>$name){
@@ -242,11 +307,27 @@ class WPGenderedUsers {
 
 
 if(!function_exists('_g')){
+    /**
+     *
+     * @param string $string
+     * @param string $gender
+     * @param string $domain
+     * @return string
+     */
     function _g($string, $gender='neutral', $domain='default'){
         return _x($string, $gender, $domain);
     }
 }
 if(!function_exists('_gn')){
+    /**
+     *
+     * @param string $single
+     * @param string $plural
+     * @param string $number
+     * @param string $gender
+     * @param string $domain
+     * @return string
+     */
     function _gn($single, $plural, $number, $gender='neutral', $domain='default'){
         return _nx($single, $plural, $number, $gender, $domain);
     }
