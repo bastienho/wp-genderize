@@ -1,4 +1,6 @@
 <?php
+__('WP Genderize', 'wp-genderize');
+__('The plugin which genderizes strings for WordPer and WordPress', 'wp-genderize');
 
 __('Administrator', 'wp-genderize');
 _x('Administrator', 'male', 'wp-genderize');

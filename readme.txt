@@ -8,7 +8,7 @@ Stable tag: /trunk
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-The plugin which genderizes strings for WordPr and WordPress
+The plugin which genderizes strings for WordPer and WordPress
 
 == Description ==
 Allow to use gendered strings for users and objects in local language
