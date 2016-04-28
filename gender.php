@@ -43,7 +43,7 @@ class WPGenderedUsers {
     var $current_screen;
 
     function __construct() {
-        load_plugin_textdomain( 'wp-genderize', false, 'wp-genderize/languages' );
+        load_plugin_textdomain( 'wp-genderize', false, basename(plugin_dir_path(__FILE__)).'/languages' );
 
         $this->meta = apply_filters('genderize_meta', 'wgu_gender');
 
