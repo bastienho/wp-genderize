@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Genderize
-  Plugin URI:
+  Plugin URI: https://github.com/bastienho/wp-genderize
   Description: The plugin which genderizes strings for WordPer and WordPress
   Version: 1.0.0
   Author: Bastien Ho
