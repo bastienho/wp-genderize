@@ -3,7 +3,7 @@ Contributors: bastho
 Donate link: http://ba.stienho.fr/#donate
 Tags: localization, i18n, gender, female, male
 Requires at least: 4.1
-Tested up to: 4.5
+Tested up to: 4.9
 Stable tag: /trunk
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
