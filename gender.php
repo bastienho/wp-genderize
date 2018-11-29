@@ -43,51 +43,16 @@ class WPGenderedUsers {
     var $current_screen;
 
     function __construct() {
-        load_plugin_textdomain( 'wp-genderize', false, basename(plugin_dir_path(__FILE__)).'/languages' );
+        $basepath = plugin_dir_path(__FILE__);
+        load_plugin_textdomain( 'wp-genderize', false, basename($basepath).'/languages' );
 
         $this->meta = apply_filters('genderize_meta', 'wgu_gender');
 
-        $this->strings_to_gender = apply_filters('genderize_strings_to_gender', array(
-            'Administrator',
-            'Editor',
-            'Author',
-            'Contributor',
-            'Subscriber',
-            // Misc.
-            'Welcome to WordPress&nbsp;%s',
-            // Posts and pages
-            'Published',
-            'Draft',
-            'Private'
-        ));
-
-        $this->plural_to_gender = apply_filters('genderize_plural_to_gender', array(
-            // Posts and pages
-            'Mine <span class="count">(%s)</span>',
-            'All <span class="count">(%s)</span>',
-            'Published <span class="count">(%s)</span>',
-            'Draft <span class="count">(%s)</span>',
-            'Private <span class="count">(%s)</span>'
-        ));
-
-        $this->string_to_replace = apply_filters('genderize_strings_to_replace', array(
-            'User',
-            'Users',
-            'All Users',
-        ));
-        $this->plural_to_replace = apply_filters('genderize_plural_to_replace', array(
-            'User',
-        ));
-
-        $this->objects = apply_filters('genderize_objects', array(
-            'post'=>_x('neutral', 'gender of a post', 'wp-genderize'),
-            'page'=>_x('neutral', 'gender of a page', 'wp-genderize'),
-            'category'=>_x('neutral', 'gendergenderize_meta of a category', 'wp-genderize'),
-            'tag'=>_x('neutral', 'gender of a tag', 'wp-genderize'),
-            'comment'=>_x('neutral', 'gender of a comment', 'wp-genderize'),
-            'widget'=>_x('neutral', 'gender of a widget', 'wp-genderize'),
-            //'users'=>_x('neutral', 'gender of an user', 'wp-genderize'),
-        ));
+        $this->strings_to_gender = apply_filters('genderize_strings_to_gender', include($basepath.'/i18n/strings-to-gender.php'));
+        $this->plural_to_gender = apply_filters('genderize_plural_to_gender', include($basepath.'/i18n/plural-to-gender.php'));
+        $this->string_to_replace = apply_filters('genderize_strings_to_replace', include($basepath.'/i18n/strings-to-replace.php'));
+        $this->plural_to_replace = apply_filters('genderize_plural_to_replace', include($basepath.'/i18n/plural-to-replace.php'));
+        $this->objects = apply_filters('genderize_objects', include($basepath.'/i18n/objects.php'));
 
 
         add_action('personal_options', array(&$this, 'personal_options'), 100);
